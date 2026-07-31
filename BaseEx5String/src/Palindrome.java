@@ -72,7 +72,8 @@ public class Palindrome {
 	 */
 	public static void main(String[] args) {
 		// Test different meaning to concatenate and search a word in a sentence.
-		String str1 = "couCOu ", str2 = "tout Coucou le monde.";
+		String str1 = "couCOu ";
+		String str2 = "tout Coucou le monde.";
 
 		System.out.println(meaning1Concatenate(str1, str2));
 		System.out.println(meaning2Concatenate(str1, str2));
