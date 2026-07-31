@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
+ * Create a simulation depicting the order-taking process in a restaurant.
+ * 
  * @author RocancourtM
  */
 
@@ -35,22 +37,22 @@ public class Menu {
 
 		for (int step = 0; step < stepsCommand.length; step++) {
 			System.out.println("choix " + stepsCommand[step] + " :");
-			
+
 			for (int index = 0; index < menu[step].length; index++) {
 				System.out.print("[" + (index + 1) + " - " + menu[step][index] + "]");
 			}
-			
+
 			System.out.println(
 					"\nQue souhaitez-vous comme " + stepsCommand[step] + " ? [saisir le chiffre correspondant]");
-			
+
 			String inputUser = sc.nextLine();
 			while (!validCommandUser(inputUser, menu[step].length)) {
 				System.out.println("Veuillez saisir une valeur entre 1 et " + menu[step].length + ".");
 				inputUser = sc.nextLine();
 			}
-			
+
 			int choiceUser = Integer.parseInt(inputUser);
-			
+
 			if (choiceUser != menu[step].length) {
 				menuUser.add(menu[step][Integer.parseInt(inputUser) - 1].toLowerCase());
 			}
@@ -90,7 +92,7 @@ public class Menu {
 			System.out.println(menu + "\n");
 			allMenu.add(menu);
 		}
-		
+
 		System.out.println("----------------Voici le récapitulatifs des menus-----------------");
 		int nbPerson = 0;
 		for (ArrayList<String> menu : allMenu) {
