@@ -32,6 +32,11 @@ public class SumTwoMaxArray {
 		return firstMax + secondMax;
 	}
 
+	/**
+	 * Main program to test the sum of the two maximum values in an array.
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		ArrayList<Integer> testArray = new ArrayList<>(Arrays.asList(78, 6, -250, 2, 12, 9));
 		System.out.println(sum2HighValueArray(testArray));
