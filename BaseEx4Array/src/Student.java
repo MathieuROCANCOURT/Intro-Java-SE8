@@ -116,6 +116,9 @@ public class Student {
 		System.out.println(this.toString() + ": La moyenne est de " + NoteClassroom.average(noteList));
 	}
 
+	/**
+	 * Add a note to the list of notes.
+	 */
 	private void addNote() {
 		boolean addOneNote = true;
 		Scanner sc = new Scanner(System.in);
