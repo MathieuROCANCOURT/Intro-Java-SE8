@@ -187,6 +187,11 @@ public class NoteClassroom {
 		return studentList;
 	}
 
+	/**
+	 * Display all students.
+	 * 
+	 * @param studentList Student list
+	 */
 	private static void showListStudent(ArrayList<Student> studentList) {
 		for (Student student : studentList) {
 			System.out.println(student);
