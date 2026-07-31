@@ -2,10 +2,10 @@
 /**
  * Matrix class where can we make different operations where can we:<br>
  * <ul>
- * <li>Add between 2 matrix.</li>
- * <li>Substract between 2 matrix.</li>
+ * <li>Add between 2 matrices.</li>
+ * <li>Substract between 2 matrices.</li>
  * <li>Multiply a matrix by a factor.</li>
- * <li>Multiply between 2 matrix.</li>
+ * <li>Multiply between 2 matrices.</li>
  * </ul>
  * 
  * @author RocancourtM
@@ -41,6 +41,12 @@ public class Matrix {
 		showValuesMatrix(res);
 	}
 
+	/**
+	 * 
+	 * @param matrix1
+	 * @param matrix2
+	 * @return
+	 */
 	public static int[][] add(int[][] matrix1, int[][] matrix2) {
 		if (matrix1.length != matrix2.length || matrix1[0].length != matrix2[0].length) {
 			System.out.println(
