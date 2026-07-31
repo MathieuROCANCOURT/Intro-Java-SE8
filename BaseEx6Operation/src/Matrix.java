@@ -10,6 +10,7 @@
  * 
  * @author RocancourtM
  */
+
 public class Matrix {
 	/**
 	 * Display a matrix in the command line.
@@ -26,12 +27,13 @@ public class Matrix {
 	}
 
 	/**
-	 * Display a result of the operation between 2 matrices or, between a factor and a matrix.
+	 * Display a result of the operation between 2 matrices or, between a factor and
+	 * a matrix.
 	 * 
-	 * @param matrix1 First matrix or factor.
-	 * @param matrix2 Second matrix.
+	 * @param matrix1   First matrix or factor.
+	 * @param matrix2   Second matrix.
 	 * @param operation The operation character ('+', '-', '*').
-	 * @param res The result of the operation.
+	 * @param res       The result of the operation.
 	 */
 	public static void showOperation(int[][] matrix1, int[][] matrix2, char operation, int[][] res) {
 		showValuesMatrix(matrix1);
@@ -51,7 +53,7 @@ public class Matrix {
 	public static int[][] add(int[][] matrix1, int[][] matrix2) {
 		if (matrix1.length != matrix2.length || matrix1[0].length != matrix2[0].length) {
 			System.out.println(
-					"Pour les additionner, les matrices douvent avoir le même nombre de colonne(s) et de ligne(s).");
+					"Pour les additionner, les matrices doivent avoir le même nombre de colonne(s) et de ligne(s).");
 			return new int[0][0];
 		}
 
@@ -75,7 +77,7 @@ public class Matrix {
 	public static int[][] sub(int[][] matrix1, int[][] matrix2) {
 		if (matrix1.length != matrix2.length || matrix1[0].length != matrix2[0].length) {
 			System.out.println(
-					"Pour soustraire, les matrices douvent avoir le même nombre de colonne(s) et de ligne(s).");
+					"Pour soustraire, les matrices doivent avoir le même nombre de colonne(s) et de ligne(s).");
 			return new int[0][0];
 		}
 
@@ -119,7 +121,7 @@ public class Matrix {
 	public static int[][] mult(int[][] matrix1, int[][] matrix2) {
 		if (matrix1[0].length != matrix2.length) {
 			System.out.println(
-					"Pour les multiplier, les matrices douvent avoir le même nombre de colonne(s) et de ligne(s).");
+					"Pour les multiplier, le nombre de colonne de la 1ère matrice doit être égale au nombre de ligne de la 2ème matrice.");
 			return new int[0][0];
 		}
 
