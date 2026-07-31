@@ -44,7 +44,7 @@ public class Matrix {
 	}
 
 	/**
-	 * Add between 2 matrices.
+	 * Addition between 2 matrices.
 	 * 
 	 * @param matrix1 The first matrix.
 	 * @param matrix2 The second matrix.
