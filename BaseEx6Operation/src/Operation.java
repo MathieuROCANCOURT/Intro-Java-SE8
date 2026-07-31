@@ -15,12 +15,19 @@ public class Operation {
 	 * 
 	 * @param a First integer.
 	 * @param b Second integer.
-	 * @return Sum between two integer.
+	 * @return Sum between two integers.
 	 */
 	private static int add(int a, int b) {
 		return a + b;
 	}
 
+	/**
+	 * Subtraction between 2 integers.
+	 * 
+	 * @param a First integer.
+	 * @param b Second integer.
+	 * @return Difference between two integers.
+	 */
 	private static int sub(int a, int b) {
 		return a - b;
 	}
