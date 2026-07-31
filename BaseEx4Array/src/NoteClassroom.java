@@ -126,6 +126,14 @@ public class NoteClassroom {
 		}
 	}
 
+	/**
+	 * Rename a student in the student list if their full name appears in that list.
+	 * 
+	 * @param studentList Student list.
+	 * @param firstName The first name to search for in student list.
+	 * @param lastName The last name to search for in student list.
+	 * @return Student list with the student's name updated.
+	 */
 	private static ArrayList<Student> renameStudent(ArrayList<Student> studentList, String firstName, String lastName) {
 		for (Student student : studentList) {
 			if (student.getFirstName().equals(firstName) && student.getLastName().equals(lastName)) {
