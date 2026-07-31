@@ -32,6 +32,12 @@ public class NoteClassroom {
 		return Collections.max(noteList);
 	}
 
+	/**
+	 * Calculate the average of the list of numbers.
+	 * 
+	 * @param noteList List of number.
+	 * @return The average, or 0 if the list is empty.
+	 */
 	protected static double average(ArrayList<Double> noteList) {
 		if (noteList.isEmpty()) {
 			return 0;
