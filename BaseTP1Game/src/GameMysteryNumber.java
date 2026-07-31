@@ -33,6 +33,12 @@ public class GameMysteryNumber {
 		}
 	}
 
+	/**
+	 * Main program with a game loop and the generation of a random number between 1
+	 * and 100.
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		boolean first = true;
 		Scanner sc = new Scanner(System.in);
