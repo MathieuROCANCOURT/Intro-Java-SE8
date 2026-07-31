@@ -52,7 +52,7 @@ public class Matrix {
 		if (matrix1.length != matrix2.length || matrix1[0].length != matrix2[0].length) {
 			System.out.println(
 					"Pour les additionner, les matrices douvent avoir le même nombre de colonne(s) et de ligne(s).");
-			return null;
+			return new int[0][0];
 		}
 
 		int[][] resMatrix = new int[matrix1.length][matrix1[0].length];
@@ -69,7 +69,7 @@ public class Matrix {
 		if (matrix1.length != matrix2.length || matrix1[0].length != matrix2[0].length) {
 			System.out.println(
 					"Pour soustraire, les matrices douvent avoir le même nombre de colonne(s) et de ligne(s).");
-			return null;
+			return new int[0][0];
 		}
 
 		int[][] resMatrix = new int[matrix1.length][matrix1[0].length];
@@ -99,7 +99,7 @@ public class Matrix {
 		if (matrix1[0].length != matrix2.length) {
 			System.out.println(
 					"Pour les multiplier, les matrices douvent avoir le même nombre de colonne(s) et de ligne(s).");
-			return null;
+			return new int[0][0];
 		}
 
 		int[][] resMatrix = new int[matrix1.length][matrix2[0].length];
