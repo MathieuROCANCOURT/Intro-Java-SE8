@@ -45,10 +45,20 @@ public class Student {
 		return this.noteList;
 	}
 
+	/**
+	 * Change the student's last name.
+	 * 
+	 * @param lastName The new last name.
+	 */
 	private void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
 
+	/**
+	 * Change the student's first name.
+	 * 
+	 * @param lastName The new first name.
+	 */
 	private void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
