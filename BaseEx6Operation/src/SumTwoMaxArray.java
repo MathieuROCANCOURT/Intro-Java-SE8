@@ -3,6 +3,8 @@ import java.util.Arrays;
 import java.util.Collections;
 
 /**
+ * Calculate the sum of the two maximum values in an array.
+ * 
  * @author RocancourtM
  */
 public class SumTwoMaxArray {
