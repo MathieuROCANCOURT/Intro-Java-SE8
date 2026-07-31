@@ -141,6 +141,9 @@ public class Student {
 		}
 	}
 
+	/**
+	 * Change the student's first name and last name.
+	 */
 	public void modifyNameStudent() {
 		Scanner sc = new Scanner(System.in);
 		do {
