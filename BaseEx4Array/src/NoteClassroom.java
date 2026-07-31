@@ -51,6 +51,13 @@ public class NoteClassroom {
 		return average / noteList.size();
 	}
 
+	/**
+	 * Add a Student to the student list where the teacher can:
+	 * Enter the student's first name, last name, and grade(s).
+	 * 
+	 * @param nbStudent Number of students to add to the list.
+	 * @return Student list.
+	 */
 	private static ArrayList<Student> addNbStudentInList(int nbStudent) {
 		ArrayList<Student> studentList = new ArrayList<Student>(nbStudent);
 		int nbStudentCreate = 0;
