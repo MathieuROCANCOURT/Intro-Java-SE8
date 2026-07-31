@@ -11,6 +11,11 @@
  * @author RocancourtM
  */
 public class Matrix {
+	/**
+	 * Display a matrix in the command line.
+	 * 
+	 * @param matrix Matrix to display.
+	 */
 	public static void showValuesMatrix(int[][] matrix) {
 		for (int row = 0; row < matrix.length; row++) {
 			for (int column = 0; column < matrix[0].length; column++) {
