@@ -1,6 +1,6 @@
 
 /**
- * Matrix class where can we make differents operations where can we:<br>
+ * Matrix class where can we make different operations where can we:<br>
  * <ul>
  * <li>Add between 2 matrix.</li>
  * <li>Substract between 2 matrix.</li>
@@ -25,6 +25,14 @@ public class Matrix {
 		}
 	}
 
+	/**
+	 * Display a result of the operation between 2 matrices or, between a factor and a matrix.
+	 * 
+	 * @param matrix1 First matrix or factor.
+	 * @param matrix2 Second matrix.
+	 * @param operation The operation character ('+', '-', '*').
+	 * @param res The result of the operation.
+	 */
 	public static void showOperation(int[][] matrix1, int[][] matrix2, char operation, int[][] res) {
 		showValuesMatrix(matrix1);
 		System.out.println(operation);
