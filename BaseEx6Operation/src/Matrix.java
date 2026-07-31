@@ -42,10 +42,11 @@ public class Matrix {
 	}
 
 	/**
+	 * Add between 2 matrices.
 	 * 
-	 * @param matrix1
-	 * @param matrix2
-	 * @return
+	 * @param matrix1 The first matrix.
+	 * @param matrix2 The second matrix.
+	 * @return The result of the addition.
 	 */
 	public static int[][] add(int[][] matrix1, int[][] matrix2) {
 		if (matrix1.length != matrix2.length || matrix1[0].length != matrix2[0].length) {
