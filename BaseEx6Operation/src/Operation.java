@@ -1,5 +1,11 @@
 
 /**
+ * Create operation class with:
+ * <ul>
+ * <li>Add between 2 numbers.</li>
+ * <li>Subtraction between 2 numbers.</li>
+ * <li>Multiplication between 2 numbers.</li>
+ * <li>Division between 2 numbers.</li>
  * 
  * @author RocancourtM
  */
@@ -7,15 +13,15 @@ public class Operation {
 	private static int add(int a, int b) {
 		return a + b;
 	}
-	
+
 	private static int sub(int a, int b) {
 		return a - b;
 	}
-	
+
 	private static int mul(int a, int b) {
 		return a * b;
 	}
-	
+
 	private static double div(double a, double b) {
 		if (b == 0) {
 			System.err.println("La division par 0 est illégale.");
