@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -45,7 +46,10 @@ public class GameMysteryNumber {
 
 		while (play(first, sc)) {
 			first = false;
-			int genNumber = (int) (Math.random() * 100) + 1, inputNumber = 0, nbTurn = 0;
+			Random random = new Random();
+			int genNumber = random.nextInt(99) + 1; // returns pseudo-random value between 1 and 100
+			int inputNumber = 0;
+			int nbTurn = 0;
 
 			while (genNumber != inputNumber) {
 				if (nbTurn == 0)
