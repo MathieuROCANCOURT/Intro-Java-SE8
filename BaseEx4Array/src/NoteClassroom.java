@@ -200,9 +200,9 @@ public class NoteClassroom {
 	}
 
 	/**
-	 * @param args
+	 * Main Program
 	 */
-	public static void main(String[] args) {
+	public static void main() {
 		ArrayList<Student> studentList = addNbStudentInList(inputNbStudent());
 		Scanner sc = new Scanner(System.in);
 
