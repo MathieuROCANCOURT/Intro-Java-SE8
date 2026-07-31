@@ -18,14 +18,29 @@ public class Student {
 		noteList = new ArrayList<Double>();
 	}
 
+	/**
+	 * Get the last name.
+	 * 
+	 * @return Student's last name.
+	 */
 	public String getLastName() {
 		return lastName;
 	}
 
+	/**
+	 * Get the first name.
+	 * 
+	 * @return Student's first name.
+	 */
 	public String getFirstName() {
 		return firstName;
 	}
 
+	/**
+	 * Get a list of the student's grades
+	 * 
+	 * @return List of notes
+	 */
 	public ArrayList<Double> getNoteList() {
 		return this.noteList;
 	}
