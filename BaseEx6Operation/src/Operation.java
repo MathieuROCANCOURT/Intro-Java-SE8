@@ -10,6 +10,13 @@
  * @author RocancourtM
  */
 public class Operation {
+	/**
+	 * Addition between 2 integers.
+	 * 
+	 * @param a First integer.
+	 * @param b Second integer.
+	 * @return Sum between two integer.
+	 */
 	private static int add(int a, int b) {
 		return a + b;
 	}
