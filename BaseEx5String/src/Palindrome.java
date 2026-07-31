@@ -65,6 +65,11 @@ public class Palindrome {
 		return sentence.equalsIgnoreCase(reverseSentence);
 	}
 
+	/**
+	 * Main program for running tests with different words and phrases.
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		// Test different meaning to concatenate and search a word in a sentence.
 		String str1 = "couCOu ", str2 = "tout Coucou le monde.";
