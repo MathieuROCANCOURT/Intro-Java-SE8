@@ -135,6 +135,11 @@ public class Matrix {
 		return resMatrix;
 	}
 
+	/**
+	 * Main program to test operations with different matrices.
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		int[][] matrix1 = { { 5, 2, 4 }, { 0, 1, 1 }, { 6, 3, 1 } };
 		int[][] matrix2 = { { 1, 1, 3 }, { 2, 5, 6 }, { 3, 0, 5 } };
