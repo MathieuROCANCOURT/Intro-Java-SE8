@@ -3,7 +3,7 @@
  * Matrix class where can we make different operations where can we:<br>
  * <ul>
  * <li>Add between 2 matrices.</li>
- * <li>Substract between 2 matrices.</li>
+ * <li>Subtraction between 2 matrices.</li>
  * <li>Multiply a matrix by a factor.</li>
  * <li>Multiply between 2 matrices.</li>
  * </ul>
@@ -65,6 +65,13 @@ public class Matrix {
 		return resMatrix;
 	}
 
+	/**
+	 * Subtraction between 2 matrices.
+	 * 
+	 * @param matrix1 The first matrix.
+	 * @param matrix2 The second matrix.
+	 * @return The result of the subtraction.
+	 */
 	public static int[][] sub(int[][] matrix1, int[][] matrix2) {
 		if (matrix1.length != matrix2.length || matrix1[0].length != matrix2[0].length) {
 			System.out.println(
