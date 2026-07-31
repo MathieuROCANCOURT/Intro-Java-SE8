@@ -8,6 +8,12 @@ import java.util.Collections;
  * @author RocancourtM
  */
 public class SumTwoMaxArray {
+	/**
+	 * Take the maximum value from the array.
+	 * 
+	 * @param array Integer array.
+	 * @return Maximum value.
+	 */
 	private static int max(ArrayList<Integer> array) {
 		return Collections.max(array);
 	}
