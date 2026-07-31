@@ -89,6 +89,13 @@ public class Matrix {
 		return resMatrix;
 	}
 
+	/**
+	 * Multiply a matrix by a factor.
+	 * 
+	 * @param matrix1 The first matrix.
+	 * @param matrix2 The second matrix.
+	 * @return The result of the multiplication.
+	 */
 	public static int[][] multByFactor(int[][] matrix, int factor) {
 		int[][] resMatrix = new int[matrix.length][matrix[0].length];
 
