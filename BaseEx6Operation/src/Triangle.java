@@ -1,10 +1,16 @@
 
 /**
- * Draw a equilateral triangle with '*' symbol in the command line.
+ * Draw an equilateral triangle with '*' symbol in the command line.
  * 
  * @author RocancourtM
  */
 public class Triangle {
+	/**
+	 * Draw an equilateral triangle containing the symbol “*” in the command line,
+	 * specifying its height.
+	 * 
+	 * @param triangleHeight Height of the triangle.
+	 */
 	private static void showTriangle(int triangleHeight) {
 		if (triangleHeight < 1) {
 			System.err.println("La hauteur du triangle doit être un entier positif.");
