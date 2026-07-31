@@ -52,8 +52,8 @@ public class NoteClassroom {
 	}
 
 	/**
-	 * Add a Student to the student list where the teacher can:
-	 * Enter the student's first name, last name, and grade(s).
+	 * Add a Student to the student list where the teacher can: Enter the student's
+	 * first name, last name, and grade(s).
 	 * 
 	 * @param nbStudent Number of students to add to the list.
 	 * @return Student list.
@@ -100,8 +100,9 @@ public class NoteClassroom {
 	}
 
 	/**
-	 * Search for a student in the list by entering their first and last name.
-	 * When entering the student's full name, be sure to use the correct uppercase and lowercase letters.
+	 * Search for a student in the list by entering their first and last name. When
+	 * entering the student's full name, be sure to use the correct uppercase and
+	 * lowercase letters.
 	 * 
 	 * @param studentList Student list.
 	 */
@@ -130,8 +131,8 @@ public class NoteClassroom {
 	 * Rename a student in the student list if their full name appears in that list.
 	 * 
 	 * @param studentList Student list.
-	 * @param firstName The first name to search for in student list.
-	 * @param lastName The last name to search for in student list.
+	 * @param firstName   The first name to search for in student list.
+	 * @param lastName    The last name to search for in student list.
 	 * @return Student list with the student's name updated.
 	 */
 	private static ArrayList<Student> renameStudent(ArrayList<Student> studentList, String firstName, String lastName) {
@@ -147,6 +148,7 @@ public class NoteClassroom {
 
 	/**
 	 * Sort a list of students by first name using the Gnome sorting algorithm.
+	 * 
 	 * @see <a href="https://www.sortvisualizer.com/gnomesort/">Gnome Sort</a>
 	 * 
 	 * @param studentList Student list.
@@ -168,7 +170,7 @@ public class NoteClassroom {
 
 		return studentList;
 	}
-	
+
 	/**
 	 * Reverse the sort order of a list of students sorted by first name.
 	 * 
@@ -200,9 +202,11 @@ public class NoteClassroom {
 	}
 
 	/**
-	 * Main Program
+	 * Main program
+	 * 
+	 * @param args
 	 */
-	public static void main() {
+	public static void main(String[] args) {
 		ArrayList<Student> studentList = addNbStudentInList(inputNbStudent());
 		Scanner sc = new Scanner(System.in);
 
