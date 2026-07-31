@@ -99,6 +99,12 @@ public class NoteClassroom {
 		return nbStudent;
 	}
 
+	/**
+	 * Search for a student in the list by entering their first and last name.
+	 * When entering the student's full name, be sure to use the correct uppercase and lowercase letters.
+	 * 
+	 * @param studentList Student list.
+	 */
 	private static void searchStudent(ArrayList<Student> studentList) {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Quelle nom cherchez-vous ?");
