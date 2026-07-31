@@ -68,6 +68,11 @@ public class Student {
 		return this.firstName + " " + this.lastName;
 	}
 
+	/**
+	 * Combine all of the student's grades into a single string.
+	 * 
+	 * @return All notes within a string.
+	 */
 	public String displayAllNotes() {
 		StringBuilder notes = new StringBuilder();
 		for (double note : this.noteList) {
