@@ -43,6 +43,13 @@ public class Operation {
 		return a * b;
 	}
 
+	/**
+	 * Division between 2 doubles.
+	 * 
+	 * @param a First double.
+	 * @param b Second double.
+	 * @return Division between two doubles.
+	 */
 	private static double div(double a, double b) {
 		if (b == 0) {
 			System.err.println("La division par 0 est illégale.");
