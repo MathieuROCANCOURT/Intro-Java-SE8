@@ -42,7 +42,7 @@ public class Palindrome {
 	/**
 	 * Check whether a string is contained in another string.
 	 * 
-	 * @param sentence A string.
+	 * @param sentence     A string.
 	 * @param wordToSearch A string to search in sentence variable.
 	 */
 	private static void searchWord(String sentence, String wordToSearch) {
@@ -53,6 +53,12 @@ public class Palindrome {
 		}
 	}
 
+	/**
+	 * A string of characters that needs to be checked to see if it is a palindrome.
+	 * 
+	 * @param sentence A string to check if is a palindrome.
+	 * @return true is a palindrome, else false.
+	 */
 	private static boolean isPalindrome(String sentence) {
 		sentence = sentence.replaceAll("[\\p{Punct}\\p{Space}]", "");
 		String reverseSentence = new StringBuilder(sentence).reverse().toString();
