@@ -74,6 +74,11 @@ public class NoteClassroom {
 		return studentList;
 	}
 
+	/**
+	 * Tell the teacher how many students he or she would like to add.
+	 * 
+	 * @return The number of student(s) to add.
+	 */
 	private static int inputNbStudent() {
 		int nbStudent = -1;
 
