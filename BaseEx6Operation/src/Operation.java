@@ -64,7 +64,8 @@ public class Operation {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		int a = 89, b = 37;
+		int a = 89;
+		int b = 37;
 		System.out.println(a + " + " + b + " = " + add(a, b));
 		System.out.println(a + " - " + b + " = " + sub(a, b));
 		System.out.println(a + " * " + b + " = " + mul(a, b));
