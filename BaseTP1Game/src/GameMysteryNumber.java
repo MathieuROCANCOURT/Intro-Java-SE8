@@ -7,6 +7,13 @@ import java.util.Scanner;
  * @author RocancourtM
  */
 public class GameMysteryNumber {
+	/**
+	 * Ask the user if they want to play.
+	 * 
+	 * @param start true it's the first round, else false.
+	 * @param sc    Read input by user.
+	 * @return true if "o" or "oui", false if "n" or "non", regardless of cases.
+	 */
 	private static boolean play(boolean start, Scanner sc) {
 		String display;
 		if (start)
