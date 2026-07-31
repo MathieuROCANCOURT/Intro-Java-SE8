@@ -1,5 +1,13 @@
 
 /**
+ * Matrix class where can we make differents operations where can we:<br>
+ * <ul>
+ * <li>Add between 2 matrix.</li>
+ * <li>Substract between 2 matrix.</li>
+ * <li>Multiply a matrix by a factor.</li>
+ * <li>Multiply between 2 matrix.</li>
+ * </ul>
+ * 
  * @author RocancourtM
  */
 public class Matrix {
