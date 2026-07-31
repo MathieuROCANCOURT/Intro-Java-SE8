@@ -92,7 +92,7 @@ public class Matrix {
 	/**
 	 * Multiply a matrix by a factor.
 	 * 
-	 * @param matrix1 The first matrix.
+	 * @param matrix1 The first matrix (a factor).
 	 * @param matrix2 The second matrix.
 	 * @return The result of the multiplication.
 	 */
@@ -109,6 +109,13 @@ public class Matrix {
 		return matrix;
 	}
 
+	/**
+	 * Multiply between 2 matrices.
+	 * 
+	 * @param matrix1 The first matrix.
+	 * @param matrix2 The second matrix.
+	 * @return The result of the multiplication.
+	 */
 	public static int[][] mult(int[][] matrix1, int[][] matrix2) {
 		if (matrix1[0].length != matrix2.length) {
 			System.out.println(
