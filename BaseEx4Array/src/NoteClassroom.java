@@ -145,6 +145,13 @@ public class NoteClassroom {
 		return studentList;
 	}
 
+	/**
+	 * Sort a list of students by first name using the Gnome sorting algorithm.
+	 * @see <a href="https://www.sortvisualizer.com/gnomesort/">Gnome Sort</a>
+	 * 
+	 * @param studentList Student list.
+	 * @return Sorted list of students.
+	 */
 	private static ArrayList<Student> sortFirstName(ArrayList<Student> studentList) {
 		for (int index = 1; index < studentList.size(); index++) {
 			for (int index2 = index; index2 > 0; index2--) {
