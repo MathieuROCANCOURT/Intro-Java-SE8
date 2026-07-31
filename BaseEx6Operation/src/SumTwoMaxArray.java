@@ -18,6 +18,12 @@ public class SumTwoMaxArray {
 		return Collections.max(array);
 	}
 
+	/**
+	 * Calculate the sum of the two maximum values in an array.
+	 * 
+	 * @param array Integer array.
+	 * @return Sum of the two maximum values
+	 */
 	private static int sum2HighValueArray(ArrayList<Integer> array) {
 		int firstMax = max(array);
 		array.remove(array.indexOf(firstMax));
