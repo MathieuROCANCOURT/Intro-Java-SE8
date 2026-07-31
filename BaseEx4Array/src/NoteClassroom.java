@@ -193,6 +193,7 @@ public class NoteClassroom {
 	 * @param studentList Student list
 	 */
 	private static void showListStudent(ArrayList<Student> studentList) {
+		System.out.println("Prénom\t Nom");
 		for (Student student : studentList) {
 			System.out.println(student);
 		}
