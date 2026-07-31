@@ -33,10 +33,11 @@ public class Triangle {
 	}
 
 	/**
+	 * Main program for testing the construction of a triangle.
+	 * 
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		showTriangle(0);
+		showTriangle(8);
 	}
-
 }
