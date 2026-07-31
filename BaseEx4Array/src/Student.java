@@ -102,6 +102,10 @@ public class Student {
 		}
 	}
 
+	/**
+	 * Add all the grades entered by the teacher. Once the teacher has finished
+	 * entering the grades, display all the grades along with the average.
+	 */
 	protected void addMultipleNote() {
 		boolean wantAddNote = true;
 		while (wantAddNote) {
