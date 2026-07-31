@@ -39,6 +39,12 @@ public class Palindrome {
 		return concat.toString();
 	}
 
+	/**
+	 * Check whether a string is contained in another string.
+	 * 
+	 * @param sentence A string.
+	 * @param wordToSearch A string to search in sentence variable.
+	 */
 	private static void searchWord(String sentence, String wordToSearch) {
 		if (sentence.toLowerCase().contains(wordToSearch.toLowerCase())) {
 			System.out.println("Le mot " + wordToSearch + "a été trouvé dans la phrase ci-dessous:\n" + sentence);
@@ -71,7 +77,5 @@ public class Palindrome {
 				System.out.println("La phrase \"" + sentence + "\" n'est pas un palindrome.");
 			}
 		}
-
 	}
-
 }
