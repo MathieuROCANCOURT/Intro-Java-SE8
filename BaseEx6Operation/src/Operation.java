@@ -32,6 +32,13 @@ public class Operation {
 		return a - b;
 	}
 
+	/**
+	 * Multiply between 2 integers.
+	 * 
+	 * @param a First integer.
+	 * @param b Second integer.
+	 * @return Multiplication between two integers.
+	 */
 	private static int mul(int a, int b) {
 		return a * b;
 	}
