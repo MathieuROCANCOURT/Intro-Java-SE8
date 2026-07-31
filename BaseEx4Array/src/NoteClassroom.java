@@ -168,7 +168,13 @@ public class NoteClassroom {
 
 		return studentList;
 	}
-
+	
+	/**
+	 * Reverse the sort order of a list of students sorted by first name.
+	 * 
+	 * @param studentList Student list.
+	 * @return List of students in reverse order.
+	 */
 	private static ArrayList<Student> reverseSortFirstName(ArrayList<Student> studentList) {
 		studentList = sortFirstName(studentList);
 
