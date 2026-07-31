@@ -1,10 +1,17 @@
 import java.util.*;
 
+/**
+ * The Student class allows you to create a student's first name, last name, and
+ * a list of grades.
+ */
 public class Student {
 	private String lastName;
 	private String firstName;
 	private ArrayList<Double> noteList;
 
+	/**
+	 * Initialize the Student class without assigning any content to it.
+	 */
 	public Student() {
 		lastName = "";
 		firstName = "";
@@ -22,7 +29,7 @@ public class Student {
 	public ArrayList<Double> getNoteList() {
 		return this.noteList;
 	}
-	
+
 	private void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
@@ -30,36 +37,37 @@ public class Student {
 	private void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
-	
+
 	@Override
 	public String toString() {
 		return this.firstName + " " + this.lastName;
 	}
-	
+
 	public String displayAllNotes() {
 		StringBuilder notes = new StringBuilder();
-		for (double note: this.noteList) {
+		for (double note : this.noteList) {
 			notes.append(note);
 			notes.append(" - ");
 		}
 		notes.delete(notes.length() - 3, notes.length() - 1);
 		return notes.toString();
 	}
-	
+
 	private static boolean continueAddNote() {
 		Scanner sc = new Scanner(System.in);
 		while (true) {
 			System.out.print("Voulez-vous ajouter une autre note? [O/n]");
 			String inputTeacher = sc.nextLine();
 			if (inputTeacher.equals("") || inputTeacher.equalsIgnoreCase("o")) {
-;				return true;
+				;
+				return true;
 			}
 			if (inputTeacher.equalsIgnoreCase("n")) {
 				return false;
 			}
 		}
 	}
-	
+
 	protected void addMultipleNote() {
 		boolean wantAddNote = true;
 		while (wantAddNote) {
@@ -69,7 +77,7 @@ public class Student {
 		}
 		System.out.println(this.toString() + ": La moyenne est de " + NoteClassroom.average(noteList));
 	}
-	
+
 	private void addNote() {
 		boolean addOneNote = true;
 		Scanner sc = new Scanner(System.in);
@@ -77,7 +85,7 @@ public class Student {
 			double note = 0.0;
 			System.out.print("Quelle est le note que vous ajoutez? ");
 			String noteUser = sc.nextLine();
-			
+
 			try {
 				note = Double.parseDouble(noteUser);
 				if (note < 0) {
@@ -91,7 +99,7 @@ public class Student {
 			}
 		}
 	}
-	
+
 	public void modifyNameStudent() {
 		Scanner sc = new Scanner(System.in);
 		do {
