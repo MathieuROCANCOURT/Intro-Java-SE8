@@ -1,5 +1,7 @@
 
 /**
+ * Draw a equilateral triangle with '*' symbol in the command line.
+ * 
  * @author RocancourtM
  */
 public class Triangle {
