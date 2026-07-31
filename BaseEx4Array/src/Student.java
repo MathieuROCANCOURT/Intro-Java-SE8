@@ -83,13 +83,17 @@ public class Student {
 		return notes.toString();
 	}
 
+	/**
+	 * Ask the teacher if they want to add another note.
+	 * 
+	 * @return true if 'o', 'O' or Enter. false if 'n' or 'N'.
+	 */
 	private static boolean continueAddNote() {
 		Scanner sc = new Scanner(System.in);
 		while (true) {
 			System.out.print("Voulez-vous ajouter une autre note? [O/n]");
 			String inputTeacher = sc.nextLine();
 			if (inputTeacher.equals("") || inputTeacher.equalsIgnoreCase("o")) {
-				;
 				return true;
 			}
 			if (inputTeacher.equalsIgnoreCase("n")) {
