@@ -6,6 +6,7 @@
  * <li>Subtraction between 2 numbers.</li>
  * <li>Multiplication between 2 numbers.</li>
  * <li>Division between 2 numbers.</li>
+ * </ul>
  * 
  * @author RocancourtM
  */
@@ -70,6 +71,6 @@ public class Operation {
 		System.out.println(a + " - " + b + " = " + sub(a, b));
 		System.out.println(a + " * " + b + " = " + mul(a, b));
 		System.out.println(a + " / " + b + " = " + div(a, b));
-		System.out.println(a + " / " + b + " = " + div(a, 0));
+		System.out.println(a + " / " + 0 + " = " + div(a, 0));
 	}
 }
