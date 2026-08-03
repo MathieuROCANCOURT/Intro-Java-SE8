@@ -13,6 +13,14 @@ import java.util.Scanner;
  */
 
 public class Menu {
+	/**
+	 * Checks whether the value entered by the user is an integer between 1 and the
+	 * number of options.
+	 * 
+	 * @param inputUser The entered by the user.
+	 * @param sizeArray The list of options.
+	 * @return true if respects conditions, else false.
+	 */
 	public static boolean validCommandUser(String inputUser, int sizeArray) {
 		int choiceUser;
 		try {
@@ -24,12 +32,13 @@ public class Menu {
 	}
 
 	public static ArrayList<String> defineMenu() {
+		String nothing = "AUCUN";
 		String[] stepsCommand = { "entrée", "plat", "accompagnement", "boisson", "dessert" };
-		String[] appetizers = { "SALADE", "SOUPE", "QUICHE", "AUCUNE", };
-		String[] mainCourse = { "POULET", "BOEUF", "POISSON", "VÉGÉTARIEN", "VEGAN", "AUCUN" };
-		String[] sideDish = { "RIZ", "PÂTES", "FRITES", "LÉGUMES", "AUCUN" };
-		String[] drink = { "EAU PLATE", "EAU GAZEUSE", "SODA", "VIN", "AUCUN" };
-		String[] dessert = { "TARTE NORMANDE", "MOUSSE AU CHOCOLAT", "TIRAMISU", "AUCUNE", };
+		String[] appetizers = { "SALADE", "SOUPE", "QUICHE", nothing + 'E' };
+		String[] mainCourse = { "POULET", "BOEUF", "POISSON", "VÉGÉTARIEN", "VEGAN", nothing };
+		String[] sideDish = { "RIZ", "PÂTES", "FRITES", "LÉGUMES", nothing };
+		String[] drink = { "EAU PLATE", "EAU GAZEUSE", "SODA", "VIN", nothing };
+		String[] dessert = { "TARTE NORMANDE", "MOUSSE AU CHOCOLAT", "TIRAMISU", nothing };
 
 		String[][] menu = { appetizers, mainCourse, sideDish, drink, dessert };
 		Scanner sc = new Scanner(System.in);
