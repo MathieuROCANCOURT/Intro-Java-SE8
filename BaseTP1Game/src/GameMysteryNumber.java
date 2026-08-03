@@ -47,7 +47,7 @@ public class GameMysteryNumber {
 		while (play(first, sc)) {
 			first = false;
 			Random random = new Random();
-			int genNumber = random.nextInt(99) + 1; // returns pseudo-random value between 1 and 100
+			int genNumber = random.nextInt(100) + 1; // returns pseudo-random value between 1 and 100
 			int inputNumber = 0;
 			int nbTurn = 0;
 
